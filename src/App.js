@@ -15,13 +15,13 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header_area}>
+        <View style={styles.header_area}>
         <Text style={styles.header_text}>NEWS</Text>
       </View>
       <FlatList
         ListHeaderComponent={() =>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            {news_banner_data.map(renderBanner)}
+          {news_banner_data.map(renderBanner)}
           </ScrollView>
         }
         data={news_data}
